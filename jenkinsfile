@@ -1,0 +1,6 @@
+node('BahminiBuild'){
+stage('scm'){
+git changelog: false, credentialsId: 'newslave', poll: false, url: 'https://github.com/Adithiyan91/bahmni-core.git'
+
+}
+}
